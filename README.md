@@ -44,7 +44,7 @@ http://localhost:8080
 ## Взаимодействие с админ-панелью через cURL
 ### a) Получить список всех товаров (GET)
 ```bash
-curl -X GET http://localhost:8080/products
+curl -X GET http://localhost:3000/products
 ```
 ### b) Добавить новый товар (POST)
 ```bash
