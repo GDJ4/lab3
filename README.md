@@ -40,7 +40,7 @@ node server.js
 ```
 ### 5. Открытие страницы пользователя
 Перейти по ссылке:
-http://localhost:3000
+http://localhost:8080
 ## Взаимодействие с админ-панелью через cURL
 ### a) Получить список всех товаров (GET)
 ```bash
@@ -48,7 +48,7 @@ curl -X GET http://localhost:8080/products
 ```
 ### b) Добавить новый товар (POST)
 ```bash
-curl -X POST http://localhost:8080/products -H "Content-Type: application/json" -d '{
+curl -X POST http://localhost:3000/products -H "Content-Type: application/json" -d '{
     "id": 6,
     "name": "Product 6",
     "description": "Description of Product 6",
@@ -58,7 +58,7 @@ curl -X POST http://localhost:8080/products -H "Content-Type: application/json" 
 ```
 ### c) Обновить товар (PUT)
 ```bash
-curl -X PUT http://localhost:8080/products/1 -H "Content-Type: application/json" -d '{
+curl -X PUT http://localhost:3000/products/1 -H "Content-Type: application/json" -d '{
     "id": 1,
     "name": "Updated Product 1",
     "description": "Updated Description of Product 1",
@@ -68,5 +68,5 @@ curl -X PUT http://localhost:8080/products/1 -H "Content-Type: application/json"
 ```
 ### d) Удалить товар (DELETE)
 ```bash
-curl -X DELETE http://localhost:8080/products/1
+curl -X DELETE http://localhost:3000/products/1
 ```
