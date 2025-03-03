@@ -55,7 +55,7 @@ curl -X POST http://localhost:3000/products -H "Content-Type: application/json" 
     "price": 600,
     "category": ["Category 1"]
 }'
-
+```
 ### c) Удалить товар (DELETE)
 ```bash
 curl -X DELETE http://localhost:3000/products/1
