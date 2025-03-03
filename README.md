@@ -55,18 +55,8 @@ curl -X POST http://localhost:3000/products -H "Content-Type: application/json" 
     "price": 600,
     "category": ["Category 1"]
 }'
-```
-### c) Обновить товар (PUT)
-```bash
-curl -X PUT http://localhost:3000/products/1 -H "Content-Type: application/json" -d '{
-    "id": 1,
-    "name": "Updated Product 1",
-    "description": "Updated Description of Product 1",
-    "price": 150,
-    "category": ["Category 1"]
-}'
-```
-### d) Удалить товар (DELETE)
+
+### c) Удалить товар (DELETE)
 ```bash
 curl -X DELETE http://localhost:3000/products/1
 ```
